@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
 import Image from "next/image";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 function LoadMore() {
   return (
     <>
