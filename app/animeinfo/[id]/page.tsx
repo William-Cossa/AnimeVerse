@@ -1,6 +1,5 @@
 import { getAnimeById } from "@/app/actions";
-import { AnimeProps } from "@/types/types";
-import { log } from "console";
+import { Anime } from "@/types/types";
 import Image from "next/image";
 import React from "react";
 
@@ -8,13 +7,12 @@ interface AnimeInfoProps {
   params: {
     id: number;
   };
-  anime: AnimeProps;
+  anime: Anime;
 }
 async function page({ params }: AnimeInfoProps) {
-  const { id } = params;
+  // const { id } = params;
 
-  console.log(id);
-  const anime = await getAnimeById(id);
+  // const anime = await getAnimeById(id);
 
   return (
     <main className=" p-5 sm:p-12 flex gap-10">
