@@ -36,7 +36,7 @@ function AnimeCard({ anime, index }: Prop) {
       viewport={{ amount: 0 }}
       className="max-w-sm rounded relative w-full"
     >
-      <div className="relative w-full h-[37vh]">
+      <div className="relative w-[95%] h-[37vh]">
         <Image
           src={`https://Shikimori.one${anime.image.original}`}
           alt={anime.name}
@@ -46,7 +46,7 @@ function AnimeCard({ anime, index }: Prop) {
       </div>
       <div className="py-4 flex flex-col gap-3">
         <div className="flex justify-between items-center gap-1">
-          <h2 className="font-bold text-white text-xl line-clamp-1 w-full">
+          <h2 className="font-bold text-white text-lg line-clamp-1 w-full">
             {anime.name}
           </h2>
           <div className="py-1 px-2 bg-[#161921] rounded-sm">
@@ -58,7 +58,7 @@ function AnimeCard({ anime, index }: Prop) {
         <div className="flex gap-4 items-center">
           <div className="flex flex-row gap-2 items-center">
             <Image
-              src="./episodes.svg"
+              src="/images/episodes.svg"
               alt="episodes"
               width={20}
               height={20}
@@ -70,7 +70,7 @@ function AnimeCard({ anime, index }: Prop) {
           </div>
           <div className="flex flex-row gap-2 items-center">
             <Image
-              src="./star.svg"
+              src="/images/star.svg"
               alt="star"
               width={18}
               height={18}
